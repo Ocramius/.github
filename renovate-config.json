@@ -1,0 +1,42 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Default configuration for repositories under `ocramius/`. Taken from https://github.com/laminas/.github/blob/cbcde244afaa457a5a8fae957581ed9abf2a50da/renovate-config.json",
+  "extends": [
+    ":dependencyDashboard",
+    ":ignoreModulesAndTests",
+    ":automergeMinor",
+    ":automergeBranch",
+    ":rebaseStalePrs",
+    ":semanticCommitsDisabled",
+    ":separateMajorReleases",
+    ":combinePatchMinorReleases",
+    ":enableVulnerabilityAlerts",
+    ":timezone(UTC)",
+    ":label(renovate)",
+    "group:allNonMajor"
+  ],
+  "commitBodyTable": true,
+  "lockFileMaintenance": {
+    "enabled": true,
+    "extends": [
+      "schedule:daily"
+    ]
+  },
+  "platformAutomerge": true,
+  "prFooter": "[Read more](https://github.com/ocramius/.github/blob/master/renovate.md) about the use of [Renovate Bot](https://github.com/renovatebot/renovate) within `ocramius/*` projects.",
+  "rangeStrategy": "replace",
+  "rollbackPrs": true,
+  "packageRules": [
+    {
+      "rangeStrategy": "bump"
+    }
+  ],
+  "vulnerabilityAlerts": {
+    "extends": [
+      ":automergeDisabled",
+      ":automergePr",
+      ":labels(security)"
+    ],
+    "rangeStrategy": "bump"
+  }
+}
