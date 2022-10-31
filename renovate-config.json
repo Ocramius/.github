@@ -29,6 +29,17 @@
   "packageRules": [
     {
       "rangeStrategy": "bump"
+    },
+    {
+      "matchPackageNames": [
+        "php"
+      ],
+      "extends": [
+        ":automergeDisabled",
+        ":automergePr"
+      ],
+      "ignoreUnstable": false,
+      "groupName": "PHP"
     }
   ],
   "vulnerabilityAlerts": {
