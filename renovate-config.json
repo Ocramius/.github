@@ -22,6 +22,9 @@
       "schedule:daily"
     ]
   },
+  "nix": {
+    "enabled": true
+  },
   "platformAutomerge": true,
   "prFooter": "[Read more](https://github.com/ocramius/.github/blob/master/renovate.md) about the use of [Renovate Bot](https://github.com/renovatebot/renovate) within `ocramius/*` projects.",
   "rangeStrategy": "replace",
