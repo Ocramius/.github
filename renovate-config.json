@@ -37,6 +37,7 @@
       "matchPackageNames": [
         "php"
       ],
+      "matchNewValue": "/~\\d+\\.\\d+\\.0/",
       "extends": [
         ":automergeDisabled",
         ":automergePr"
