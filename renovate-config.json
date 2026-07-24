@@ -13,7 +13,8 @@
     ":enableVulnerabilityAlerts",
     ":timezone(UTC)",
     ":label(renovate)",
-    "group:allNonMajor"
+    "group:allNonMajor",
+    "helpers:pinGitHubActionDigests"
   ],
   "commitBodyTable": true,
   "lockFileMaintenance": {
